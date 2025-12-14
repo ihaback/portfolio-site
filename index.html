@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IHS - Developer Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio showing frontend and fullstack projects in React, NET and Node.js along with my CV, testimonials and a contact form."
+    />
+    <meta
+      name="keywords"
+      content="frontend, portfolio, web development, React, Vue, .NET, Node.js, CSS, HTML, JavaScript, accessibility, BEM, CV, testimonials"
+    />
+    <meta name="author" content="IHS" />
+    <meta property="og:title" content="IHS - Developer Portfolio" />
+
+    <meta
+      property="og:description"
+      content="Portfolio showing frontend and fullstack projects in React, NET and Node.js along with my CV, testimonials and a contact form."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ihaback.netlify.app" />
+    <meta
+      property="og:image"
+      content="https://ihaback.netlify.app/assets/images/meta-image.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="IHS - Developer Portfolio" />
+    <meta
+      name="twitter:description"
+      content="Portfolio showing frontend and fullstack projects in React, NET and Node.js along with my CV, testimonials and a contact form."
+    />
+    <meta
+      name="twitter:image"
+      content="https://ihaback.netlify.app/assets/images/meta-image.png"
+    />
+    <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.svg" />
+    <link rel="stylesheet" href="/assets/styles/style.css" />
+    <link rel="canonical" href="https://ihaback.netlify.app" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container container--mobile-full-width">
+        <div class="site-header__inner">
+          <a
+            href="/"
+            aria-label="Navigate to home page"
+            class="site-header__logo"
+          >
+            <span class="visually-hidden">Home: </span>IHS
+          </a>
+          <nav
+            class="site-header__nav site-header__nav--desktop-align-right"
+            aria-label="Main navigation"
+          >
+            <ul class="site-header__nav-items">
+              <li
+                class="site-header__nav-item site-header__nav-item--mobile-border-bottom site-header__nav-item--mobile-border-right"
+              >
+                <a
+                  class="site-header__nav-item-link"
+                  href="#about"
+                  aria-label="About Me section"
+                  >About</a
+                >
+              </li>
+              <li
+                class="site-header__nav-item site-header__nav-item--mobile-border-bottom"
+              >
+                <a
+                  class="site-header__nav-item-link"
+                  href="#portfolio"
+                  aria-label="Portfolio section"
+                  >Portfolio</a
+                >
+              </li>
+              <li
+                class="site-header__nav-item site-header__nav-item--mobile-border-bottom site-header__nav-item--mobile-border-right"
+              >
+                <a
+                  class="site-header__nav-item-link"
+                  href="#technologies"
+                  aria-label="Technologies section"
+                  >Tech</a
+                >
+              </li>
+              <li
+                class="site-header__nav-item site-header__nav-item--mobile-border-bottom"
+              >
+                <a
+                  class="site-header__nav-item-link"
+                  href="#testimonials"
+                  aria-label="Testimonials section"
+                  >Testimonials</a
+                >
+              </li>
+              <li
+                class="site-header__nav-item site-header__nav-item--mobile-border-bottom span-all"
+              >
+                <a
+                  class="site-header__nav-item-link"
+                  href="#contact"
+                  aria-label="Contact section"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <nav
+            class="site-header__nav site-header__nav--icons"
+            aria-label="Social media navigation"
+          >
+            <ul class="site-header__nav-items site-header__nav-items--icons">
+              <li
+                class="site-header__nav-item site-header__nav-item--mobile-border-right site-header__nav-item--mobile-border-bottom"
+              >
+                <a
+                  class="site-header__nav-item-link"
+                  href="https://www.linkedin.com/in/igorsmurawa/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Visit Igor's LinkedIn profile (external link, opens i new tab)"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="site-header__nav-item-icon"
+                  >
+                    <use href="#linked-in"></use>
+                  </svg>
+                </a>
+              </li>
+              <li
+                class="site-header__nav-item site-header__nav-item--mobile-border-bottom site-header__nav-item--mobile-border-right"
+              >
+                <a
+                  class="site-header__nav-item-link"
+                  href="https://github.com/ihaback"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Visit Igor's Github profile (external link, opens i new tab)"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="site-header__nav-item-icon"
+                  >
+                    <use href="#github"></use>
+                  </svg>
+                  <span class="visually-hidden"
+                    >Link to Igor's Github page</span
+                  >
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section
+        class="section about"
+        id="about"
+        aria-labelledby="about-heading"
+        aria-describedby="about-description"
+      >
+        <div class="container">
+          <div class="even-columns even-columns--mobile-reverse">
+            <div class="flow">
+              <h1 class="about__header" id="about-heading">
+                Hello there, I'm Igor
+              </h1>
+              <p class="about__intro" id="about-description">
+                I'm a dedicated fullstack developer with experience in modern
+                web technologies. I enjoy working with frontend frameworks like
+                React and Vue, and developing backend solutions with .NET and
+                Node.js to create engaging web applications.
+              </p>
+              <div class="flex-group" role="group" aria-label="Contact actions">
+                <a
+                  href="/assets/pdf/cv.pdf"
+                  download="Igor-Smurawa-CV.pdf"
+                  class="button"
+                  data-type="accent"
+                  aria-label="Download Igor Smurawa's CV as PDF file"
+                  >Download CV</a
+                >
+                <a
+                  href="#contact"
+                  class="button"
+                  data-type="primary"
+                  aria-label="Navigate to contact form section"
+                  >Contact me</a
+                >
+              </div>
+            </div>
+            <figure>
+              <img
+                src="/assets/images/me.jpg"
+                alt="Headshot of Igor in office setting."
+                fetchpriority="high"
+                class="about__image"
+              />
+            </figure>
+          </div>
+        </div>
+      </section>
+      <section
+        id="portfolio"
+        class="section bg-primary-700 text-center"
+        aria-labelledby="portfolio-heading"
+      >
+        <div class="container">
+          <header class="flow section__header-content">
+            <h2 class="section__header" id="portfolio-heading">Portfolio</h2>
+            <p
+              class="section__header-content-paragraph"
+              id="portfolio-description"
+            >
+              Click the links below to view the source code and documentation
+            </p>
+          </header>
+          <ul
+            class="grid-auto-fit portfolio"
+            aria-describedby="portfolio-description"
+          >
+            <li>
+              <a
+                class="portfolio__card"
+                href="https://github.com/ihaback/refresh-token-redux-toolkit"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Redux Auth project - View source code on GitHub (external link, opens i new tab)"
+              >
+                <h3 class="portfolio__card-heading">
+                  Redux Auth
+                  <svg
+                    class="portfolio__card-heading-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden
+                  >
+                    <use href="#link"></use>
+                  </svg>
+                </h3>
+
+                <p>
+                  Small React + Redux Toolkit example showing JWT refresh
+                  handling via Axios interceptors and Redux.
+                </p>
+                <span class="visually-hidden">Opens in new tab</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="portfolio__card"
+                href="https://github.com/ihaback/ProductSolutionCSharp"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="C# Products project - View source code on GitHub (external link, opens i new tab)"
+              >
+                <h3 class="portfolio__card-heading">
+                  C# Products
+                  <svg
+                    class="portfolio__card-heading-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden
+                  >
+                    <use href="#link"></use>
+                  </svg>
+                </h3>
+                <p>
+                  .NET 9 product management solution with console and WPF
+                  applications. Explores dependency injection and MVVM patterns.
+                </p>
+                <span class="visually-hidden">Opens in new tab</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="portfolio__card"
+                href="https://github.com/ihaback/nest-swagger-api"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Node.js API project - View source code on GitHub (external link, opens i new tab)"
+              >
+                <h3 class="portfolio__card-heading">
+                  Node.js API
+                  <svg
+                    class="portfolio__card-heading-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden
+                  >
+                    <use href="#link"></use>
+                  </svg>
+                </h3>
+                <p>
+                  Simple API built with Nest framework featuring CRUD operations
+                  and user authentication. Uses SQLite database for easy setup.
+                </p>
+                <span class="visually-hidden">Opens in new tab</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="portfolio__card"
+                href="https://github.com/ihaback/storybook-component-jest-testing-example"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Storybook Test project - View source code on GitHub (external link, opens i new tab)"
+              >
+                <h3 class="portfolio__card-heading">
+                  Storybook Test
+                  <svg
+                    class="portfolio__card-heading-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden
+                  >
+                    <use href="#link"></use>
+                  </svg>
+                </h3>
+                <p>
+                  Testing setup that integrates Storybook stories with Jest for
+                  automated component testing and visual regression validation.
+                </p>
+                <span class="visually-hidden">Opens in new tab</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="portfolio__card"
+                href="https://github.com/ihaback/next-paginate-search"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Next.js Search project - View source code on GitHub (external link, opens i new tab)"
+              >
+                <h3 class="portfolio__card-heading">
+                  Next.js Search
+                  <svg
+                    class="portfolio__card-heading-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden
+                  >
+                    <use href="#link"></use>
+                  </svg>
+                </h3>
+                <p>
+                  Next.js demo with accessible user search and pagination using
+                  TypeScript, SCSS with BEM, and modern React practices.
+                </p>
+                <span class="visually-hidden">Opens in new tab</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="portfolio__card"
+                href="https://github.com/ihaback/festival-landing-page"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Landing Page project - View source code on GitHub (external link, opens i new tab)"
+              >
+                <h3 class="portfolio__card-heading">
+                  Landing Page
+                  <svg
+                    class="portfolio__card-heading-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden
+                  >
+                    <use href="#link"></use>
+                  </svg>
+                </h3>
+                <p>
+                  2025 CSS feature showcase including CSS layers, custom
+                  properties, nesting, and grid layouts with accessibility
+                  enhancements.
+                </p>
+                <span class="visually-hidden">Opens in new tab</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section
+        id="technologies"
+        class="section bg-primary-800 text-center"
+        aria-labelledby="technologies-heading"
+      >
+        <div class="container">
+          <header class="flow section__header-content">
+            <h2 class="section__header" id="technologies-heading">
+              Technologies
+            </h2>
+            <p
+              class="section__header-content-paragraph"
+              id="technologies-description"
+            >
+              Programming languages and tools I work with to build modern web
+              applications
+            </p>
+          </header>
+          <ul
+            class="technologies grid-auto-fit"
+            aria-describedby="technologies-description"
+          >
+            <li>
+              <svg
+                class="technologies__icon"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <use href="#csharp"></use>
+              </svg>
+              <span class="visually-hidden">C Sharp programming language</span>
+            </li>
+            <li>
+              <svg
+                class="technologies__icon"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <use href="#typescript"></use>
+              </svg>
+              <span class="visually-hidden"
+                >TypeScript programming language</span
+              >
+            </li>
+            <li>
+              <svg
+                class="technologies__icon"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <use href="#css"></use>
+              </svg>
+              <span class="visually-hidden">CSS3 styling language</span>
+            </li>
+            <li>
+              <svg
+                class="technologies__icon"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <use href="#node"></use>
+              </svg>
+              <span class="visually-hidden">Node.js runtime environment</span>
+            </li>
+            <li>
+              <svg
+                class="technologies__icon"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <use href="#npm"></use>
+              </svg>
+              <span class="visually-hidden">NPM package manager</span>
+            </li>
+            <li>
+              <svg
+                class="technologies__icon"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <use href="#azure"></use>
+              </svg>
+              <span class="visually-hidden"
+                >Microsoft Azure cloud platform</span
+              >
+            </li>
+            <li>
+              <svg
+                class="technologies__icon"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <use href="#aws"></use>
+              </svg>
+              <span class="visually-hidden"
+                >Amazon Web Services cloud platform</span
+              >
+            </li>
+            <li>
+              <svg
+                class="technologies__icon"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <use href="#ubuntu"></use>
+              </svg>
+              <span class="visually-hidden">Ubuntu Linux operating system</span>
+            </li>
+            <li>
+              <svg
+                class="technologies__icon"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <use href="#github"></use>
+              </svg>
+              <span class="visually-hidden"
+                >GitHub version control platform</span
+              >
+            </li>
+            <li>
+              <svg
+                class="technologies__icon"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <use href="#storybook"></use>
+              </svg>
+              <span class="visually-hidden">Storybook development tool</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section
+        id="testimonials"
+        class="section bg-primary-700 text-center"
+        aria-labelledby="testimonials-heading"
+      >
+        <div class="container">
+          <header class="flow section__header-content">
+            <h2 id="testimonials-heading" class="section__header">
+              Testimonials
+            </h2>
+            <p
+              id="testimonials-description"
+              class="section__header-content-paragraph"
+            >
+              What clients and colleagues say about working with me
+            </p>
+          </header>
+          <ul
+            class="testimonials even-columns even-columns--desktop-two-columns"
+            aria-describedby="testimonials-description"
+          >
+            <li class="testimonial">
+              <img
+                src="assets/images/thomas.jpg"
+                alt="Professional headshot of Thomas Olsson, QA Test Lead"
+                class="testimonial__image"
+              />
+              <h3 class="testimonial__name">
+                <span class="visually-hidden">Testimonial from </span>Thomas
+                Olsson
+              </h3>
+              <p class="testimonial__title">QA Test Lead</p>
+              <p class="testimonial__quote">
+                <span class="visually-hidden">Quote: </span>
+                "I worked close to Igor at Nordnet for two years with different
+                products regarding deposits, withdrawals and lending for the
+                Nordic markets. As a QA it was a pleasure to work with him since
+                he not only produced lots of snappy code, but also had an eye
+                for details and constant improvements. A great attitude towards
+                his fellow colleagues is also part of Igor's DNA. Igor is one of
+                those solid rocks that you want within every software company.
+                Without any hesitation I would happily work with Igor again!"
+              </p>
+            </li>
+            <li class="testimonial">
+              <img
+                src="assets/images/jesper.jpg"
+                alt="Professional headshot of Jesper Annebäck, Senior Frontend Developer"
+                class="testimonial__image"
+              />
+              <h3 class="testimonial__name">
+                <span class="visually-hidden">Testimonial from </span>
+                Jesper Annebäck
+              </h3>
+              <p class="testimonial__title">Senior Frontend Developer</p>
+              <p class="testimonial__quote">
+                <span class="visually-hidden">Quote: </span>
+                "Working with Igor was always a pleasure. His strengths are that
+                he listens really well and is not afraid to ask questions. I
+                always got a comforting feeling when working on projects with
+                Igor and we always got something good out of our sessions. He's
+                also good at working in teams and independent and there's no
+                doubt that he won't deliver. Igor was always easy to approach
+                and had a solution minded approach to the discussions we had,
+                but always kept a guiding and prestigeless demeanor."
+              </p>
+            </li>
+            <li class="testimonial">
+              <img
+                src="assets/images/niclas.jpg"
+                alt="Professional headshot of Niclas Bergstedt, Test Automation Engineer"
+                class="testimonial__image"
+              />
+              <h3 class="testimonial__name">
+                <span class="visually-hidden">Testimonial from </span>Niclas
+                Bergstedt
+              </h3>
+              <p class="testimonial__title">Test Automation Engineer</p>
+              <p class="testimonial__quote">
+                <span class="visually-hidden">Quote: </span>
+                "I worked with Igor on an assignment at Aktieinvest. He was
+                great to work with and always brought a good sense of humour.
+                Igor is diligent and structured in his work, and delivers strong
+                frontend solutions. I hope I get the chance to work with you
+                again."
+              </p>
+            </li>
+            <li class="testimonial">
+              <img
+                src="assets/images/miranda.jpg"
+                alt="Professional headshot of Miranda Yung, Project Manager"
+                class="testimonial__image"
+              />
+              <h3 class="testimonial__name">
+                <span class="visually-hidden">Testimonial from </span>Miranda
+                Yung
+              </h3>
+              <p class="testimonial__title">Project Manager</p>
+              <p class="testimonial__quote">
+                <span class="visually-hidden">Quote: </span>
+                "I would recommend Igor, who can with his positive and humble
+                attitude always contribute to the good atmosphere for both
+                working and customer relations. In addition, a professional
+                creative approach and talented colleague."
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section
+        id="contact"
+        class="section bg-primary-800 text-center"
+        aria-labelledby="contact-heading"
+      >
+        <div class="container">
+          <header class="flow section__header-content">
+            <h2 class="section__header" id="contact-heading">Contact</h2>
+            <p
+              class="section__header-content-paragraph"
+              id="contact-description"
+            >
+              Get in touch with me using the form below or reach out directly
+              via Linkedin
+            </p>
+          </header>
+        </div>
+        <div class="container container--narrow">
+          <form
+            class="contact grid-auto-fit"
+            method="POST"
+            data-netlify="true"
+            name="contact"
+          >
+            <div class="contact__field">
+              <label for="first-name" class="contact__label"
+                >First Name *</label
+              >
+              <input
+                id="first-name"
+                name="first-name"
+                type="text"
+                class="contact__input"
+                placeholder="Your First Name"
+                autocomplete="given-name"
+                required
+                minlength="2"
+                maxlength="50"
+                pattern="[A-Za-zÅÄÖåäö\s]+"
+                title="First name should only contain letters (including å, ä, ö) and spaces"
+              />
+            </div>
+            <div class="contact__field">
+              <label for="last-name" class="contact__label">Last Name *</label>
+              <input
+                id="last-name"
+                name="last-name"
+                type="text"
+                class="contact__input"
+                placeholder="Your Last Name"
+                autocomplete="family-name"
+                required
+                minlength="2"
+                maxlength="50"
+                pattern="[A-Za-zÅÄÖåäö\s]+"
+                title="Last name should only contain letters (including å, ä, ö) and spaces"
+              />
+            </div>
+            <div class="contact__field">
+              <label for="email" class="contact__label">Email *</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                class="contact__input"
+                placeholder="Your E-mail Address"
+                autocomplete="email"
+                required
+                title="Please enter a valid email address"
+                pattern="[^\s@]+@[^\s@]+\.[^\s@]+"
+              />
+            </div>
+            <div class="contact__field">
+              <label for="phone" class="contact__label">Phone *</label>
+              <input
+                id="phone"
+                name="phone"
+                type="tel"
+                class="contact__input"
+                placeholder="Your Phone Number"
+                autocomplete="tel"
+                required
+                pattern="\+?[0-9]+"
+                title="Please enter a valid phone number (optional + sign followed by numbers)"
+              />
+            </div>
+            <div class="contact__field span-all">
+              <label for="message" class="contact__label">Message *</label>
+              <textarea
+                id="message"
+                name="message"
+                class="contact__textarea"
+                required
+                minlength="10"
+                maxlength="350"
+                placeholder="Your Message"
+                title="Message must be at least 10 characters long and may include å, ä, ö and common punctuation."
+              ></textarea>
+            </div>
+            <button
+              class="button contact__button"
+              data-type="primary"
+              type="submit"
+            >
+              Send
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="section text-center site-footer" aria-label="Site footer">
+      <div class="container">
+        <div class="flow">
+          <div class="site-footer__name">&copy Igor Hallingbäck Smurawa</div>
+          <div class="site-footer__icons">
+            <a
+              href="https://www.linkedin.com/in/igorsmurawa/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="site-footer__link"
+              aria-label="Visit Igor's LinkedIn profile (external link, opens i new tab)"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="site-footer__icons-icon"
+              >
+                <use href="#linked-in"></use>
+              </svg>
+            </a>
+            <a
+              href="https://github.com/ihaback"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="site-footer__link"
+              aria-label="Visit Igor's Github profile (external link, opens i new tab)"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="site-footer__icons-icon"
+              >
+                <use href="#github"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <svg xmlns="http://www.w3.org/2000/svg" class="visually-hidden">
+      <symbol viewBox="0 0 448 512" id="linked-in">
+        <path
+          d="M416 32L31.9 32C14.3 32 0 46.5 0 64.3L0 447.7C0 465.5 14.3 480 31.9 480L416 480c17.6 0 32-14.5 32-32.3l0-383.4C448 46.5 433.6 32 416 32zM135.4 416l-66.4 0 0-213.8 66.5 0 0 213.8-.1 0zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77zM384.3 416l-66.4 0 0-104c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9l0 105.8-66.4 0 0-213.8 63.7 0 0 29.2 .9 0c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9l0 117.2z"
+        />
+      </symbol>
+      <symbol viewBox="0 0 512 512" id="github">
+        <path
+          d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM252.8 8c-138.7 0-244.8 105.3-244.8 244 0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1 100-33.2 167.8-128.1 167.8-239 0-138.7-112.5-244-251.2-244zM105.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+        />
+      </symbol>
+      <symbol viewBox="0 0 125 125" id="typescript">
+        <path
+          d="M0 125H125V0H0V125ZM100.73 57.5C103.724 58.1948 106.445 59.7606 108.55 62C109.709 63.2064 110.716 64.5497 111.55 66C111.55 66.16 106.15 69.81 102.86 71.85C102.74 71.93 102.26 71.41 101.73 70.62C101.129 69.5837 100.276 68.7164 99.2496 68.0991C98.2231 67.4818 97.057 67.1346 95.86 67.09C92.07 66.83 89.63 68.82 89.65 72.09C89.6187 72.9041 89.8051 73.7119 90.19 74.43C91.02 76.16 92.57 77.19 97.43 79.29C106.38 83.14 110.21 85.68 112.59 89.29C115.25 93.29 115.84 99.75 114.04 104.53C112.04 109.73 107.14 113.26 100.21 114.43C97.0448 114.793 93.8468 114.759 90.69 114.33C85.8722 113.548 81.4279 111.254 78 107.78C76.85 106.51 74.61 103.2 74.75 102.96C75.1151 102.689 75.4994 102.445 75.9 102.23L80.5 99.59L84.09 97.51L84.84 98.62C86.1057 100.431 87.7166 101.973 89.58 103.16C93.58 105.26 99.04 104.97 101.74 102.54C102.647 101.65 103.212 100.469 103.338 99.2049C103.464 97.9405 103.143 96.6719 102.43 95.62C101.43 94.23 99.43 93.06 93.84 90.62C87.39 87.84 84.61 86.12 82.07 83.38C80.4843 81.5719 79.3136 79.4386 78.64 77.13C78.1375 74.4924 78.0633 71.7912 78.42 69.13C79.75 62.9 84.42 58.55 91.24 57.26C94.3984 56.8692 97.5977 56.9569 100.73 57.52V57.5ZM71.39 62.74V67.86H55.16V114.09H43.65V67.85H27.38V62.85C27.3363 61.1287 27.3831 59.4064 27.52 57.69C27.58 57.61 37.52 57.57 49.52 57.59H71.33L71.39 62.74Z"
+        />
+      </symbol>
+      <symbol viewBox="0 0 108 124" id="csharp">
+        <path
+          d="M107.5 31.3L107.8 31.1C107.2 30 106.3 29 105.4 28.5L57.1 0.7C56.3 0.2 55.2 0 54 0C52.8 0 51.7 0.3 50.9 0.7L2.9 28.6C1.2 29.6 0 32.1 0 34V89.7C0 90.8 0.2 92 0.9 93.1L0.7 93.2C1.2 94 1.9 94.7 2.6 95.1L50.8 123C51.6 123.5 52.7 123.7 53.9 123.7C55.1 123.7 56.2 123.4 57 123L105 95.1C106.7 94.1 107.9 91.6 107.9 89.7V33.9C108 33.1 107.9 32.2 107.5 31.3ZM54 101.3C32.2 101.3 14.5 83.6 14.5 61.8C14.5 40 32.2 22.3 54 22.3C68.7 22.3 81.5 30.4 88.3 42.3L75.3 49.8C71.1 42.3 63.1 37.3 54 37.3C40.5 37.3 29.5 48.3 29.5 61.8C29.5 75.3 40.5 86.3 54 86.3C63.1 86.3 71.1 81.3 75.3 73.9L88.2 81.5C81.4 93.3 68.6 101.3 54 101.3ZM105 59.8H101.8L100.9 63.8H105V68.8H100L98.8 74.8H93.9L95.1 68.8H91.3L90.1 74.8H85.3L86.5 68.8H84V63.8H87.5L88.4 59.8H84V54.8H89.3L90.5 48.8H95.4L94.2 54.8H98L99.2 48.8H104L102.8 54.8H105V59.8ZM92.3 63.8H96.1L97 59.8H93.2L92.3 63.8Z"
+        />
+      </symbol>
+      <symbol viewBox="0 0 89 126" id="css">
+        <path
+          d="M0 25L8.069 115.493L44.275 125.543L80.582 115.48L88.66 25H0ZM69.21 75.488L66.86 97.38L66.869 99.255L44.33 105.55L44.312 105.566L21.593 99.341L20.056 82H31.197L31.987 90.766L44.334 94.061L44.33 94.076V94.044L56.724 90.549L58.032 76H32.125L31.903 73.645L31.397 67.998L31.132 65H59.018L60.032 54H17.559L17.336 51.411L16.83 45.381L16.565 42H72.162L71.895 45.334L69.21 75.488ZM69.33 13.374L62.181 5H69.33V0H53.33V4.363L61.72 12H53.33V17H69.33V13.374ZM50.33 13.374L43.523 5H50.33V0H35.33V4.363L43.063 12H35.33V17H50.33V13.374ZM32.33 12H24.33V5H32.33V0H18.33V17H32.33V12Z"
+        />
+      </symbol>
+      <symbol viewBox="0 0 129 79" id="node">
+        <path
+          d="M86.076 0.00250053C85.953 0.00148416 85.8319 0.032442 85.7244 0.0923405C85.6126 0.157438 85.5194 0.250185 85.4537 0.361679C85.3881 0.473173 85.3521 0.599673 85.3494 0.72904V19.659C85.3473 19.7523 85.3222 19.8435 85.2761 19.9247C85.2301 20.0058 85.1647 20.0742 85.0857 20.1238C85.0059 20.1667 84.9166 20.1892 84.826 20.1892C84.7353 20.1892 84.6461 20.1667 84.5662 20.1238L81.5002 18.3508C81.2752 18.2217 81.0202 18.1538 80.7607 18.1538C80.5013 18.1538 80.2463 18.2217 80.0212 18.3508L67.7512 25.4858C67.5241 25.6137 67.3347 25.7994 67.2023 26.024C67.0699 26.2486 66.9992 26.5041 66.9973 26.7648V41.0048C66.9973 41.5288 67.2882 42.0258 67.7512 42.2878L80.0212 49.4228C80.2461 49.5516 80.5007 49.6193 80.7597 49.6193C81.0188 49.6193 81.2734 49.5516 81.4982 49.4228L93.7682 42.2878C94.2312 42.0258 94.5221 41.5286 94.5221 41.0048V5.50484C94.5221 4.95184 94.2312 4.45384 93.7682 4.19384L86.4482 0.0898399C86.3326 0.0313822 86.2049 0.000625692 86.0752 0L86.076 0.00250053ZM13.686 17.7725C13.456 17.7725 13.2259 17.8597 13.0239 17.9737L0.753946 25.0807C0.523235 25.2121 0.331751 25.4027 0.199232 25.6328C0.0667139 25.8629 -0.00204404 26.1242 4.62775e-05 26.3897L0.0293463 45.4897C0.0293463 45.7527 0.172346 46.0153 0.404346 46.1323C0.511774 46.2035 0.637783 46.2414 0.766646 46.2414C0.89551 46.2414 1.02152 46.2035 1.12895 46.1323L8.42395 41.9393C8.65069 41.8107 8.83946 41.6246 8.97116 41.3996C9.10286 41.1747 9.17281 40.919 9.17395 40.6583V31.7193C9.17395 31.1953 9.46385 30.6983 9.92785 30.4363L13.0238 28.6313C13.25 28.4933 13.5109 28.4228 13.7758 28.4282C14.0358 28.4282 14.2974 28.4853 14.5004 28.6313L17.5964 30.4363C18.0594 30.6983 18.3503 31.1955 18.3503 31.7193V40.6583C18.3503 41.1803 18.6383 41.6793 19.1003 41.9393L26.3363 46.1323C26.4489 46.2034 26.5792 46.2411 26.7123 46.2411C26.8454 46.2411 26.9758 46.2034 27.0883 46.1323C27.2035 46.0694 27.2994 45.9764 27.3658 45.8632C27.4323 45.75 27.4666 45.6209 27.4653 45.4897V26.3897C27.4653 25.8657 27.1754 25.3697 26.7114 25.1067L14.4714 17.9737C14.2656 17.8633 14.0399 17.7949 13.8073 17.7725H13.686ZM114.386 17.9795V17.9815L114.384 17.9834C114.131 17.9834 113.88 18.0487 113.648 18.1807L101.378 25.3117C100.915 25.5757 100.628 26.0699 100.628 26.5947V40.8347C100.628 41.3587 100.915 41.8547 101.378 42.1157L113.558 49.1037C113.777 49.2324 114.027 49.3002 114.281 49.3002C114.536 49.3002 114.785 49.2324 115.005 49.1037L122.386 44.9707C122.501 44.9076 122.596 44.8144 122.662 44.7013C122.728 44.5881 122.762 44.4591 122.761 44.3281C122.762 44.1974 122.728 44.0689 122.662 43.9561C122.596 43.8433 122.5 43.7505 122.386 43.6875L110.056 36.5525C109.943 36.4862 109.849 36.3918 109.783 36.2785C109.718 36.1653 109.682 36.0369 109.681 35.906V31.451C109.68 31.3209 109.714 31.193 109.78 31.0809C109.846 30.9688 109.942 30.8766 110.056 30.8143L113.911 28.6013C114.023 28.5303 114.154 28.4927 114.287 28.4927C114.42 28.4927 114.55 28.5303 114.663 28.6013L118.507 30.8143C118.619 30.8797 118.712 30.9724 118.778 31.0838C118.844 31.1952 118.88 31.3216 118.884 31.451V34.945C118.884 35.208 119.028 35.4696 119.259 35.5856C119.372 35.6571 119.502 35.695 119.636 35.695C119.769 35.695 119.9 35.6571 120.013 35.5856L127.304 31.3066C127.528 31.177 127.713 30.9904 127.841 30.7656C127.969 30.5409 128.035 30.2862 128.032 30.0276V26.5626C128.032 26.0386 127.739 25.5426 127.304 25.2796L115.124 18.1796C114.899 18.0495 114.643 17.9801 114.383 17.9784H114.382L114.386 17.9795ZM47.196 18.2139C47.0248 18.243 46.8568 18.2993 46.7019 18.3897L34.8319 25.2827L47.9819 49.5427C48.0515 49.5156 48.1212 49.4831 48.187 49.445L60.447 42.324C60.6221 42.222 60.7707 42.087 60.8884 41.9295L47.1984 18.2095L47.196 18.2139ZM48.479 18.5635L56.606 32.6535L60.461 25.5225C60.4537 25.518 60.447 25.5132 60.4396 25.5088L48.4796 18.5678L48.479 18.5635ZM34.059 25.8315C33.8346 26.097 33.7035 26.4363 33.7035 26.7944V41.0344C33.7035 41.2105 33.7373 41.3796 33.7953 41.5403L38.3203 33.6923L34.0583 25.8273L34.059 25.8315ZM61.099 26.3139L57.156 33.6009L61.181 40.5779V26.7979C61.181 26.6311 61.1512 26.4707 61.099 26.3174L61.099 26.3139ZM80.789 28.6169C80.854 28.6169 80.9185 28.6318 80.9785 28.6618L85.1715 31.1088C85.2875 31.1668 85.3473 31.3102 85.3473 31.4272V36.3202C85.3473 36.4662 85.2866 36.5845 85.1715 36.6425L80.9765 39.0875C80.9178 39.1161 80.8534 39.1309 80.788 39.1309C80.7227 39.1309 80.6583 39.1161 80.5995 39.0875L76.4045 36.6445C76.2885 36.5865 76.2287 36.4392 76.2287 36.3222V31.4292C76.2287 31.2832 76.2895 31.1679 76.4045 31.1089L80.5995 28.6619C80.6584 28.6325 80.7232 28.617 80.789 28.6169ZM114.339 30.5969C114.287 30.5972 114.237 30.6129 114.195 30.6418L111.849 32.0108C111.804 32.0381 111.768 32.0763 111.743 32.1219C111.718 32.1674 111.705 32.2187 111.706 32.2706V35.0106C111.706 35.1266 111.762 35.2143 111.849 35.2723L114.195 36.6413C114.237 36.6697 114.288 36.6848 114.339 36.6848C114.391 36.6848 114.441 36.6697 114.484 36.6413L116.828 35.2723C116.872 35.2446 116.908 35.206 116.934 35.1602C116.959 35.1144 116.972 35.0629 116.972 35.0106V32.2726C116.972 32.2205 116.959 32.1693 116.934 32.1238C116.909 32.0783 116.872 32.0401 116.828 32.0128L114.484 30.6418C114.441 30.6135 114.39 30.5986 114.339 30.5989L114.339 30.5969ZM38.839 34.6629L34.425 42.3169C34.4299 42.3198 34.4338 42.3238 34.4387 42.3267L46.6887 49.4477C46.7571 49.4871 46.8292 49.5196 46.9016 49.5473L38.8356 34.6673L38.839 34.6629ZM63.249 46.9829C62.822 46.9829 62.3962 47.0836 62.034 47.2876L50.484 54.0176C50.1135 54.2347 49.8063 54.5452 49.5931 54.918C49.3799 55.2909 49.2682 55.7131 49.269 56.1426V69.5626C49.269 70.4366 49.7318 71.2516 50.484 71.6896L53.525 73.4356C55 74.1636 55.52 74.1583 56.185 74.1583C58.355 74.1583 59.601 72.8213 59.601 70.5213V57.2813C59.5999 57.1894 59.5634 57.1015 59.4989 57.036C59.4345 56.9704 59.3472 56.9323 59.2553 56.9297H57.7803C57.6875 56.9308 57.5987 56.9683 57.533 57.0339C57.4673 57.0996 57.4299 57.1884 57.4287 57.2813V70.5313C57.4287 71.5503 56.3627 72.5703 54.6557 71.6973L51.4997 69.8633C51.3837 69.8053 51.3259 69.657 51.3259 69.541V56.111C51.3259 55.995 51.3838 55.8477 51.4997 55.7907L63.0397 49.0957C63.1267 49.0377 63.2713 49.0377 63.3893 49.0957L74.9293 55.7907C75.0443 55.8507 75.1051 55.967 75.1051 56.111V69.531C75.1051 69.676 75.0454 69.7953 74.9293 69.8533L63.3793 76.5803C63.2923 76.6383 63.1477 76.6383 63.0297 76.5803L60.0807 74.8033C59.9927 74.7453 59.8757 74.718 59.7897 74.774C58.9797 75.242 58.8373 75.3011 58.0557 75.5631C57.8817 75.6211 57.5929 75.7353 58.1709 76.0553L62.0229 78.3583C62.3989 78.5613 62.8027 78.6767 63.2379 78.6767C63.6719 78.6767 64.1038 78.5619 64.4509 78.4169L76.0009 71.6899C76.3717 71.472 76.679 71.1608 76.8921 70.7873C77.1053 70.4138 77.2169 69.991 77.2159 69.5609V56.1409C77.2159 55.2669 76.7531 54.4549 76.0009 54.0179L64.4509 47.2879C64.0792 47.0847 63.6616 46.9798 63.2379 46.9832V46.9812L63.249 46.9829ZM81.279 53.1119C80.6862 53.1143 80.1186 53.352 79.7009 53.7728C79.2833 54.1936 79.0499 54.763 79.052 55.3559C79.0504 55.9484 79.2841 56.5173 79.7016 56.9377C80.1192 57.3581 80.6865 57.5955 81.279 57.5979C82.496 57.5979 83.509 56.5779 83.509 55.3559C83.5059 54.7643 83.2704 54.1977 82.8532 53.7782C82.436 53.3588 81.8706 53.1202 81.279 53.1139V53.1119ZM81.2497 53.4889H81.2517C81.4985 53.4858 81.7434 53.5319 81.9722 53.6245C82.201 53.717 82.4091 53.8542 82.5843 54.0279C82.7596 54.2017 82.8985 54.4086 82.993 54.6366C83.0875 54.8646 83.1356 55.1091 83.1347 55.3559C83.1347 56.3759 82.2939 57.2469 81.2517 57.2469C80.2397 57.2469 79.3977 56.4043 79.3977 55.3559C79.3977 54.3079 80.2673 53.4909 81.2497 53.4889ZM80.4392 54.1022V56.6632H80.9333V55.6492H81.3708C81.5448 55.6492 81.6006 55.7073 81.6306 55.8523C81.6306 55.8823 81.7166 56.5215 81.7166 56.6375H82.2361C82.1761 56.5215 82.1499 56.1696 82.1209 55.9656C82.0929 55.6456 82.0646 55.4145 81.7166 55.3855C81.8906 55.3265 82.1775 55.2402 82.1775 54.7742C82.1775 54.1042 81.5974 54.1043 81.3084 54.1043L80.4392 54.1022ZM80.8767 54.5104H81.279C81.425 54.5104 81.6579 54.51 81.6579 54.86C81.6579 54.976 81.599 55.2096 81.279 55.2096H80.8767V54.5104ZM66.4067 56.5204C63.1067 56.5204 61.1357 57.9194 61.1357 60.2784C61.1357 62.8124 63.1037 63.5074 66.2587 63.8274C70.0487 64.2074 70.3387 64.7618 70.3387 65.5184C70.3387 66.8284 69.2967 67.3794 66.8657 67.3794C63.7977 67.3794 63.1307 66.6226 62.8987 65.0804C62.8987 64.9044 62.7582 64.7894 62.5842 64.7894H61.0802C61.034 64.7892 60.9882 64.7981 60.9454 64.8157C60.9027 64.8333 60.8638 64.8592 60.8312 64.8919C60.7985 64.9246 60.7726 64.9634 60.755 65.0062C60.7374 65.0489 60.7284 65.0948 60.7286 65.141C60.7286 67.121 61.7736 69.448 66.8396 69.448C70.4846 69.448 72.5936 67.992 72.5936 65.428C72.5936 62.925 70.9136 62.253 67.3556 61.787C63.7656 61.321 63.3906 61.0587 63.3906 60.215C63.3906 59.516 63.7111 58.586 66.3706 58.586C68.7456 58.586 69.6436 59.11 69.9916 60.711C70.0082 60.7832 70.0478 60.8481 70.1046 60.8957C70.1614 60.9433 70.2322 60.971 70.3061 60.9747H71.8411C71.9281 60.9747 72.0184 60.9175 72.0774 60.8595C72.1316 60.7821 72.1615 60.6903 72.1634 60.5958C71.9324 57.8008 70.1104 56.5198 66.4054 56.5198L66.4067 56.5204Z"
+        />
+      </symbol>
+      <symbol viewBox="0 0 124 51" id="npm">
+        <path
+          d="M0 0H124V43.71H62V51H34.44V43.71H0V0ZM6.89 36.43H20.67V14.57H27.56V36.43H34.45V7.29H6.89V36.43ZM41.33 7.29V43.71H55.11V36.43H68.89V7.29H41.33ZM55.11 14.58H62V29.14H55.11V14.58ZM75.78 7.29V36.43H89.56V14.57H96.45V36.43H103.34V14.57H110.23V36.43H117.12V7.29H75.78Z"
+        />
+      </symbol>
+      <symbol viewBox="0 0 127 119" id="azure">
+        <path
+          d="M43.1614 0.00300002C44.3982 0.00321673 45.6039 0.391428 46.6085 1.11296C47.6131 1.83449 48.3661 2.85298 48.7614 4.025L84.6714 110.421C84.9717 111.31 85.0558 112.259 84.9169 113.187C84.7779 114.115 84.4198 114.997 83.8722 115.76C83.3246 116.522 82.6032 117.144 81.7679 117.572C80.9325 118 80.0071 118.223 79.0684 118.223H120.448C121.387 118.222 122.311 117.998 123.146 117.57C123.98 117.141 124.701 116.52 125.248 115.758C125.796 114.995 126.154 114.113 126.293 113.184C126.432 112.256 126.347 111.307 126.046 110.418L90.1394 4.022C89.7441 2.84958 88.9909 1.83077 87.9858 1.10919C86.9808 0.387607 85.7746 -0.000351975 84.5374 2.39611e-07L43.1614 0.00300002ZM41.8254 0.481C40.5862 0.480971 39.3783 0.869758 38.3719 1.59257C37.3654 2.31539 36.6112 3.3358 36.2154 4.51L0.310358 110.9C0.0102729 111.789 -0.0737936 112.737 0.0651136 113.665C0.204021 114.593 0.561909 115.474 1.10917 116.237C1.65643 116.999 2.37732 117.62 3.21222 118.048C4.04711 118.477 4.972 118.7 5.91036 118.7H34.8034C36.0424 118.7 37.2494 118.29 38.2554 117.587C39.2616 116.864 40.016 115.845 40.4124 114.671L47.4314 93.961L34.0204 81.104C33.7744 80.831 32.6674 78.83 33.6514 77.102C34.7594 75.443 36.6064 75.443 36.6064 75.443H53.8914L62.9654 49.298L47.4524 3.671C47.4104 3.466 46.5384 2.306 45.1714 1.391C43.8014 0.476 41.8264 0.482 41.8264 0.482L41.8254 0.481ZM36.9454 76.221C36.3979 76.2202 35.8629 76.3843 35.4101 76.692C34.9574 76.9997 34.6078 77.4366 34.407 77.9459C34.2062 78.4552 34.1636 79.0132 34.2846 79.5471C34.4056 80.081 34.6846 80.566 35.0854 80.939L72.9154 116.249C74.0164 117.279 75.4174 117.88 76.9224 117.88C76.9224 117.88 78.2044 117.948 78.9774 117.847C80.7944 117.574 82.5024 116.079 83.0674 115.457C84.5244 113.518 83.8614 110.507 83.8614 110.507L72.4114 76.227L36.9454 76.221Z"
+        />
+      </symbol>
+      <symbol viewBox="0 0 127 76" id="aws">
+        <path
+          d="M107.888 0.00043186C106.036 0.00043186 104.266 0.211432 102.583 0.715432C100.899 1.21943 99.4661 1.93843 98.2041 2.90343C96.9584 3.82438 95.9248 5.00188 95.1731 6.35643C94.4161 7.70443 94.0361 9.26243 94.0361 11.0324C94.0361 13.2194 94.7521 15.2824 96.1421 17.1374C97.5281 19.0324 99.8021 20.4614 102.876 21.4304L108.982 23.3254C111.044 24.0004 112.478 24.7164 113.236 25.5164C113.993 26.3174 114.372 27.2814 114.372 28.4614C114.372 30.1874 113.614 31.5354 112.181 32.4614C110.751 33.3864 108.689 33.8524 106.036 33.8524C104.349 33.8524 102.708 33.6844 101.025 33.3484C99.4331 33.0208 97.8802 32.526 96.3921 31.8724C95.9711 31.7044 95.5911 31.5364 95.3411 31.4544C95.0972 31.3699 94.8412 31.326 94.5831 31.3244C93.9491 31.3244 93.6141 31.7474 93.6141 32.6294V34.7784C93.6156 35.1852 93.7021 35.5871 93.8681 35.9584C94.0361 36.3384 94.4971 36.7584 95.1731 37.1384C96.2671 37.7664 97.9071 38.3174 100.013 38.8214C102.118 39.3254 104.31 39.5794 106.497 39.5794C108.647 39.5794 110.626 39.2824 112.521 38.6964C114.329 38.1454 115.888 37.3874 117.193 36.3364C118.497 35.3264 119.509 34.0634 120.267 32.6294C120.981 31.2004 121.361 29.5594 121.361 27.7474C121.361 25.5594 120.728 23.5794 119.423 21.8524C118.119 20.1254 115.932 18.7784 112.9 17.8094L106.92 15.9144C104.69 15.2014 103.13 14.3984 102.286 13.5984C101.446 12.8014 101.025 11.7904 101.025 10.6104C101.025 8.88443 101.696 7.66043 103.005 6.86443C104.31 6.06343 106.204 5.68443 108.603 5.68443C111.591 5.68443 114.286 6.23143 116.689 7.32443C117.403 7.66143 117.95 7.83243 118.286 7.83243C118.919 7.83243 119.255 7.36943 119.255 6.48543V4.50543C119.255 3.91543 119.13 3.45443 118.876 3.11443C118.626 2.73643 118.204 2.39943 117.614 2.06343C117.192 1.80943 116.603 1.55943 115.844 1.30543C115.054 1.04956 114.254 0.824059 113.446 0.629432C112.56 0.461432 111.677 0.293431 110.708 0.169431C109.773 0.0508911 108.831 -0.00556458 107.888 0.00043186ZM21.0661 0.0824307C18.7501 0.0824307 16.5581 0.336431 14.4961 0.883431C12.4331 1.38843 10.6651 2.02043 9.19308 2.77843C8.60308 3.07543 8.22308 3.36843 8.01308 3.66143C7.80208 3.95743 7.72008 4.46143 7.72008 5.13743V7.20043C7.72008 8.08243 8.01308 8.50443 8.60308 8.50443C8.77108 8.50443 8.98108 8.46143 9.27708 8.37943C9.57008 8.29343 10.0731 8.12543 10.7491 7.83243C12.2287 7.24712 13.7482 6.76823 15.2961 6.39943C16.7851 6.03595 18.3123 5.85231 19.8451 5.85243C23.0871 5.85243 25.3581 6.48543 26.7081 7.79043C28.0121 9.09343 28.6881 11.3244 28.6881 14.5244V17.5984C27.0051 17.2194 25.4051 16.8834 23.8451 16.6724C22.2871 16.4624 20.8141 16.3364 19.3841 16.3364C15.0441 16.3364 11.6341 17.4304 9.06808 19.6224C6.49708 21.8094 5.23608 24.7154 5.23608 28.2934C5.23608 31.6614 6.28608 34.3564 8.34908 36.3794C10.4151 38.3994 13.2361 39.4114 16.7711 39.4114C21.7411 39.4114 25.8681 37.4734 29.1501 33.5984C29.5505 34.4439 29.9856 35.2726 30.4541 36.0824C30.8962 36.7885 31.4038 37.4514 31.9701 38.0624C32.3921 38.4424 32.8141 38.6524 33.2361 38.6524C33.5701 38.6524 33.9501 38.5244 34.3291 38.2744L36.9821 36.5044C37.5281 36.0844 37.7821 35.6614 37.7821 35.2434C37.7761 34.8992 37.6746 34.5634 37.4891 34.2734C36.9661 33.298 36.5158 32.2852 36.1421 31.2434C35.8451 30.3184 35.6771 29.0534 35.6771 27.4934H35.5911V13.8524C35.5911 9.21943 34.4151 5.76643 32.0991 3.49243C29.7391 1.21943 26.0741 0.0824307 21.0661 0.0824307ZM40.6461 1.09443C39.9701 1.09443 39.6341 1.47343 39.6341 2.14543C39.6341 2.44243 39.7631 2.98943 40.0131 3.83243L49.9071 36.3794C50.1611 37.1794 50.4541 37.7664 50.7941 38.0204C51.1301 38.3174 51.6341 38.4424 52.3921 38.4424H56.0121C56.7711 38.4424 57.3591 38.3174 57.6961 38.0204C58.0361 37.7274 58.2871 37.1804 58.4971 36.3364L64.9821 9.21943L71.5091 36.3794C71.6771 37.2194 71.9691 37.7664 72.3091 38.0634C72.6461 38.3554 73.1921 38.4854 73.9931 38.4854H77.6141C78.3291 38.4854 78.8761 38.3184 79.2121 38.0634C79.5521 37.8104 79.8451 37.2634 80.0991 36.4234L90.2471 3.87243C90.4151 3.41243 90.4971 3.07543 90.5401 2.82143C90.5831 2.56743 90.6261 2.35543 90.6261 2.14543C90.6261 1.43043 90.2471 1.09543 89.5711 1.09543H85.6581C84.9011 1.09543 84.3501 1.26143 84.0141 1.51643C83.7211 1.76643 83.4241 2.31643 83.1741 3.15643L75.8881 31.3694L69.2351 3.15843C69.0691 2.35843 68.7711 1.76843 68.4351 1.51843C68.0991 1.22043 67.5511 1.09543 66.7511 1.09543H63.3841C62.6261 1.09543 62.0361 1.26243 61.6961 1.51743C61.3611 1.76743 61.1081 2.31743 60.9001 3.15743L54.3301 31.0334L47.2551 3.15843C47.0051 2.35843 46.7511 1.76843 46.4151 1.51843C46.1181 1.22043 45.5711 1.09543 44.7711 1.09543L40.6461 1.09443ZM20.9381 21.3484C22.262 21.3493 23.5846 21.4328 24.8981 21.5984C26.2014 21.764 27.4942 22.004 28.7701 22.3174V24.0824C28.7701 25.5174 28.6021 26.7354 28.3481 27.7474C28.0981 28.7574 27.5901 29.6424 26.9181 30.4424C25.7811 31.7044 24.4341 32.6294 22.9181 33.1374C21.4021 33.6414 19.9691 33.8954 18.5821 33.8954C16.6451 33.8954 15.1721 33.3874 14.1601 32.3364C13.1061 31.3264 12.6021 29.8524 12.6021 27.8724C12.6021 25.7664 13.2771 24.1684 14.6641 23.0324C16.0551 21.8954 18.1181 21.3484 20.9381 21.3484ZM117.298 47.2004C112.866 47.2634 107.634 48.2524 103.677 51.0324C102.454 51.9154 102.665 53.0944 104.013 52.9264C108.521 52.3794 118.453 51.2004 120.223 53.4734C121.993 55.7034 118.247 65.0934 116.56 69.2634C116.056 70.5234 117.15 71.0324 118.286 70.0634C125.696 63.8324 127.634 50.8214 126.118 48.9264C125.361 48.0014 121.73 47.1364 117.298 47.2004ZM0.928083 49.7114C0.00208348 49.8274 -0.418917 50.9474 0.560083 51.8324C17.0681 66.7344 38.9191 75.7044 63.1731 75.7044C80.4781 75.7044 100.603 70.2744 114.454 60.0444C116.727 58.3554 114.752 55.7904 112.434 56.8404C96.9011 63.4104 80.0131 66.6104 64.6461 66.6104C41.8681 66.6104 19.8461 60.3374 1.99308 49.9774C1.60308 49.7464 1.23808 49.6734 0.929084 49.7114H0.928083Z"
+        />
+      </symbol>
+      <symbol viewBox="0 0 81 128" id="ubuntu">
+        <path
+          d="M0 0V128H80.662V0H0ZM53.22 55.023C57.833 55.023 61.57 58.791 61.57 63.439C61.57 68.087 57.833 71.855 53.22 71.855C48.61 71.855 44.87 68.087 44.87 63.439C44.87 58.791 48.61 55.023 53.22 55.023ZM41.734 55.877C42.387 55.881 43.043 55.91 43.699 55.963C42.1807 57.9273 41.2971 60.3077 41.166 62.787C34.593 62.909 28.526 66.179 24.768 71.629C23.5966 70.8937 22.3054 70.3694 20.953 70.08C20.1252 69.8993 19.2803 69.8085 18.433 69.809C18.223 69.809 18.012 69.811 17.799 69.824L17.795 69.826C22.667 61.163 31.94 55.82 41.734 55.877ZM64.328 68.205C66.3336 71.2672 67.714 74.6957 68.3898 78.2934C69.0657 81.891 69.0236 85.5867 68.266 89.168C67.3879 93.3041 65.5738 97.184 62.963 100.51L62.965 100.516L62.961 100.512L62.963 100.51C62.3222 98.0529 60.9241 95.8599 58.967 94.242C60.1982 92.2327 61.0765 90.0275 61.564 87.722C62.574 82.981 61.8911 78.0359 59.634 73.746C61.7289 72.4234 63.3674 70.4887 64.328 68.205ZM18.443 73.48C23.054 73.48 26.793 77.248 26.793 81.896C26.793 86.544 23.054 90.312 18.443 90.312C13.831 90.312 10.093 86.544 10.093 81.896C10.093 77.248 13.831 73.48 18.443 73.48ZM23.406 92.897C26.232 98.389 31.259 102.261 37.276 103.56L37.277 103.556C37.9541 103.703 38.6383 103.816 39.327 103.892C39.3816 106.436 40.2364 108.898 41.77 110.929C39.7768 110.942 37.7882 110.736 35.84 110.315C26.937 108.391 19.687 102.245 16.268 93.78C18.6815 94.2267 21.1741 93.9184 23.406 92.897ZM51.342 95.188C55.954 95.188 59.692 98.957 59.692 103.605C59.692 108.252 55.954 112.021 51.342 112.021C46.731 112.021 42.99 108.252 42.99 103.605C42.99 98.957 46.73 95.188 51.342 95.188Z"
+        />
+      </symbol>
+
+      <symbol viewBox="0 0 100 125" id="storybook">
+        <path
+          d="M93.3475 0.0123616L86.4335 0.443362L86.9725 14.8204C87.0005 15.6154 86.0835 16.0794 85.4585 15.5864L80.8285 11.9364L75.3435 16.0984C75.2022 16.2056 75.0334 16.2704 74.8566 16.2853C74.6799 16.3001 74.5026 16.2643 74.3455 16.182C74.1884 16.0998 74.0579 15.9745 73.9694 15.8209C73.8808 15.6672 73.8378 15.4915 73.8455 15.3144L74.4625 1.19136L5.87446 5.48036C4.2429 5.58202 2.71573 6.31746 1.61899 7.52967C0.522247 8.74188 -0.0571649 10.3348 0.0044565 11.9684L3.86446 114.806C3.92338 116.378 4.57107 117.869 5.6789 118.985C6.78673 120.101 8.27367 120.759 9.84446 120.829L93.4565 124.583C94.3017 124.621 95.1457 124.487 95.9378 124.189C96.7298 123.892 97.4536 123.438 98.0655 122.853C98.6768 122.269 99.1635 121.566 99.4962 120.788C99.8289 120.01 100.001 119.173 100.001 118.327V6.26436C100.002 5.40869 99.8269 4.56202 99.4872 3.77667C99.1475 2.99133 98.6503 2.28398 98.0265 1.69836C97.4032 1.11241 96.6665 0.660482 95.8617 0.370494C95.0569 0.0805048 94.2012 -0.0413826 93.3475 0.0123616ZM51.8875 21.1994C68.1955 21.1994 77.1015 29.9224 77.1015 46.5184C74.8975 48.2314 58.4815 49.3984 58.4815 46.9614C58.8275 37.6614 54.6645 37.2544 52.3515 37.2544C50.1535 37.2544 46.4525 37.9164 46.4525 42.8984C46.4525 55.1864 78.1425 54.5234 78.1425 79.3224C78.1425 93.2724 66.8075 100.977 52.3515 100.977C37.4315 100.977 24.3945 94.9414 25.8665 74.0144C26.4445 71.5574 45.4115 72.1414 45.4115 74.0144C45.1815 82.6494 47.1465 85.1894 52.1185 85.1894C55.9355 85.1894 57.6715 83.0864 57.6715 79.5434C57.6715 66.9224 26.4445 66.4804 26.4445 43.3424C26.4445 30.0574 35.5815 21.1994 51.8875 21.1994Z"
+        />
+      </symbol>
+
+      <symbol
+        viewBox="0 0 576 448"
+        xmlns="http://www.w3.org/2000/svg"
+        id="cloud"
+      >
+        <path
+          d="M0 304C0 383.5 64.5 448 144 448H448C518.7 448 576 390.7 576 320C576 268.4 545.5 223.9 501.5 203.7C508.2 190.6 512 175.7 512 160C512 107 469 64 416 64C398.3 64 381.8 68.8 367.6 77.1C343.5 31.3 295.4 0 240 0C160.5 0 96 64.5 96 144C96 152 96.7 159.9 97.9 167.5C41 186.7 0 240.6 0 304Z"
+        />
+      </symbol>
+      <symbol
+        viewBox="0 0 512 512"
+        xmlns="http://www.w3.org/2000/svg"
+        id="rain"
+      >
+        <path
+          d="M96 320C43 320 0 277 0 224C0 181.5 27.6 145.4 65.9 132.8C64.6 126.1 64 119.1 64 112C64 50.1 114.1 0 176 0C219.1 0 256.5 24.3 275.2 60C289.9 42.9 311.7 32 336 32C380.2 32 416 67.8 416 112C416 117.5 415.4 122.8 414.4 128C414.9 128 415.5 128 416 128C469 128 512 171 512 224C512 277 469 320 416 320H96ZM97.6 388.2C98.7 385.7 101.2 384 104 384C106.8 384 109.3 385.6 110.4 388.2L140.6 456.4C142.8 461.5 144 466.9 144 472.4C144 494.3 125.9 512 104 512C82.1 512 64 494.3 64 472.4C64 466.9 65.2 461.4 67.4 456.4L97.6 388.2ZM249.6 388.2C250.7 385.7 253.2 384 256 384C258.8 384 261.3 385.6 262.4 388.2L292.6 456.4C294.8 461.5 296 466.9 296 472.4C296 494.3 277.9 512 256 512C234.1 512 216 494.3 216 472.4C216 466.9 217.2 461.4 219.4 456.4L249.6 388.2ZM371.4 456.4L401.6 388.2C402.7 385.7 405.2 384 408 384C410.8 384 413.3 385.6 414.4 388.2L444.6 456.4C446.8 461.5 448 466.9 448 472.4C448 494.3 429.9 512 408 512C386.1 512 368 494.3 368 472.4C368 466.9 369.2 461.4 371.4 456.4Z"
+        />
+      </symbol>
+      <symbol
+        viewBox="0 0 508 576"
+        xmlns="http://www.w3.org/2000/svg"
+        id="snow"
+      >
+        <path
+          d="M285.678 32C285.678 14.3 271.378 0 253.678 0C235.978 0 221.678 14.3 221.678 32V94.1L206.678 79.1C197.278 69.7 182.078 69.7 172.778 79.1C163.478 88.5 163.378 103.7 172.778 113L221.778 162V232.6L160.578 197.3L142.678 130.4C139.278 117.6 126.078 110 113.278 113.4C100.478 116.8 92.7784 130 96.1784 142.8L101.678 163.3L47.9784 132.3C32.6784 123.5 13.0784 128.7 4.27837 144C-4.52163 159.3 0.678368 178.9 15.9784 187.7L69.6784 218.7L49.1784 224.2C36.3784 227.6 28.7784 240.8 32.1784 253.6C35.5784 266.4 48.7784 274 61.5784 270.6L128.478 252.7L189.678 288L128.478 323.3L61.5784 305.4C48.7784 302 35.5784 309.6 32.1784 322.4C28.7784 335.2 36.3784 348.4 49.1784 351.8L69.6784 357.3L15.9784 388.3C0.678368 397.1 -4.52163 416.7 4.27837 432C13.0784 447.3 32.6784 452.6 47.9784 443.7L101.678 412.7L96.1784 433.2C92.7784 446 100.378 459.2 113.178 462.6C125.978 466 139.178 458.4 142.578 445.6L160.478 378.7L221.678 343.4V414L172.678 463C163.278 472.4 163.278 487.6 172.678 496.9C182.078 506.2 197.278 506.3 206.578 496.9L221.578 481.9V544C221.578 561.7 235.878 576 253.578 576C271.278 576 285.578 561.7 285.578 544V481.9L300.578 496.9C309.978 506.3 325.178 506.3 334.478 496.9C343.778 487.5 343.878 472.3 334.478 463L285.478 414V343.4L346.678 378.7L364.578 445.6C367.978 458.4 381.178 466 393.978 462.6C406.778 459.2 414.378 446 410.978 433.2L405.478 412.7L459.178 443.7C474.478 452.5 494.078 447.3 502.878 432C511.678 416.7 506.478 397.1 491.178 388.3L437.478 357.3L457.978 351.8C470.778 348.4 478.378 335.2 474.978 322.4C471.578 309.6 458.378 302 445.578 305.4L378.678 323.3L317.478 288L378.678 252.7L445.578 270.6C458.378 274 471.578 266.4 474.978 253.6C478.378 240.8 470.778 227.6 457.978 224.2L437.478 218.7L491.178 187.7C506.478 178.9 511.778 159.3 502.878 144C493.978 128.7 474.478 123.5 459.178 132.3L405.478 163.3L410.978 142.8C414.378 130 406.778 116.8 393.978 113.4C381.178 110 367.978 117.6 364.578 130.4L346.678 197.3L285.478 232.6V162L334.478 113C343.878 103.6 343.878 88.4 334.478 79.1C325.078 69.8 309.878 69.7 300.578 79.1L285.578 94.1V32H285.678Z"
+        />
+      </symbol>
+      <symbol
+        viewBox="0 0 512 528"
+        xmlns="http://www.w3.org/2000/svg"
+        id="thunder"
+      >
+        <path
+          d="M0 224C0 277 43 320 96 320H134.6L258.7 209C270.9 198.1 286.7 192 303.1 192C347.7 192 379.6 235 366.8 277.7L354.1 320H416C469 320 512 277 512 224C512 171 469 128 416 128C415.5 128 414.9 128 414.4 128C415.5 122.8 416 117.5 416 112C416 67.8 380.2 32 336 32C311.7 32 289.9 42.9 275.2 60C256.5 24.3 219.1 0 176 0C114.1 0 64 50.1 64 112C64 119.1 64.7 126.1 65.9 132.8C27.6 145.4 0 181.5 0 224ZM160.6 400H222.4L191.2 504.1C187.6 516 196.5 528 209 528C213.6 528 218 526.3 221.4 523.3L362.5 396.9C366 393.8 368 389.3 368 384.5C368 375.3 360.6 367.9 351.4 367.9H289.6L320.8 263.8C324.4 251.9 315.5 239.9 303 239.9C298.4 239.9 294 241.6 290.6 244.6L149.5 371.1C146 374.2 144 378.7 144 383.5C144 392.7 151.4 400.1 160.6 400.1V400Z"
+        />
+      </symbol>
+      <symbol
+        viewBox="0 0 536 536"
+        xmlns="http://www.w3.org/2000/svg"
+        id="clear"
+      >
+        <path
+          d="M157.689 1.83208C165.089 -1.26792 173.489 -0.367921 180.189 4.03208L267.989 62.2321L355.789 4.03208C362.489 -0.367921 370.889 -1.16792 378.289 1.83208C385.689 4.83208 390.889 11.4321 392.489 19.2321L413.389 122.432L516.589 143.332C524.389 144.932 530.989 150.332 533.989 157.632C536.989 164.932 536.189 173.432 531.789 180.132L473.589 267.932L531.789 355.732C536.189 362.432 536.989 370.832 533.989 378.232C530.989 385.632 524.389 391.032 516.589 392.532L413.289 413.332L392.489 516.632C390.889 524.432 385.489 531.032 378.189 534.032C370.889 537.032 362.389 536.232 355.689 531.832L267.889 473.632L180.089 531.832C173.389 536.232 164.989 537.032 157.589 534.032C150.189 531.032 144.789 524.432 143.289 516.632L122.489 413.332L19.1888 392.432C11.3888 390.832 4.78881 385.432 1.78881 378.132C-1.21119 370.832 -0.411187 362.332 3.98881 355.632L62.1888 267.932L3.98881 180.132C-0.411187 173.432 -1.21119 165.032 1.78881 157.632C4.78881 150.232 11.3888 144.832 19.1888 143.332L122.489 122.532L143.389 19.2321C144.989 11.4321 150.389 4.83208 157.689 1.83208ZM187.089 267.932C187.089 246.609 195.56 226.159 210.637 211.081C225.715 196.003 246.165 187.532 267.489 187.532C288.812 187.532 309.262 196.003 324.34 211.081C339.418 226.159 347.889 246.609 347.889 267.932C347.889 289.255 339.418 309.706 324.34 324.783C309.262 339.861 288.812 348.332 267.489 348.332C246.165 348.332 225.715 339.861 210.637 324.783C195.56 309.706 187.089 289.255 187.089 267.932ZM395.889 267.932C395.889 233.878 382.361 201.219 358.281 177.14C334.202 153.06 301.543 139.532 267.489 139.532C233.435 139.532 200.776 153.06 176.696 177.14C152.617 201.219 139.089 233.878 139.089 267.932C139.089 301.986 152.617 334.645 176.696 358.725C200.776 382.804 233.435 396.332 267.489 396.332C301.543 396.332 334.202 382.804 358.281 358.725C382.361 334.645 395.889 301.986 395.889 267.932Z"
+        />
+      </symbol>
+      <symbol
+        viewBox="0 0 320 512"
+        xmlns="http://www.w3.org/2000/svg"
+        id="question"
+      >
+        <path
+          d="M64 160C64 107 107 64 160 64C213 64 256 107 256 160C256 202.7 228.1 238.9 189.5 251.4C161.1 260.6 128 286.7 128 328V352C128 369.7 142.3 384 160 384C177.7 384 192 369.7 192 352V328C192 326.3 192.6 323.9 195.5 320.7C198.5 317.4 203.4 314.2 209.2 312.3C273.5 291.6 320 231.3 320 160C320 71.6 248.4 0 160 0C71.6 0 0 71.6 0 160C0 177.7 14.3 192 32 192C49.7 192 64 177.7 64 160ZM160 512C182.1 512 200 494.1 200 472C200 449.9 182.1 432 160 432C137.9 432 120 449.9 120 472C120 494.1 137.9 512 160 512Z"
+        />
+      </symbol>
+      <symbol
+        viewBox="0 0 576 449"
+        xmlns="http://www.w3.org/2000/svg"
+        id="link"
+      >
+        <path
+          d="M419.5 64C402.9 64 386.8 68.5 372.7 76.7C356.9 60.7 338.5 47.3 318.2 37.2C346.4 13.2 382.3 0 419.5 0C505.9 0 576 70 576 156.5C576 198 559.5 237.8 530.2 267.1L459.1 338.2C429.8 367.5 390 384 348.5 384C262.1 384 192 314 192 227.5C192 226 192 224.5 192.1 223C192.6 205.3 207.3 191.4 225 191.9C242.7 192.4 256.6 207.1 256.1 224.8C256.1 225.7 256.1 226.6 256.1 227.4C256.1 278.5 297.5 319.9 348.6 319.9C373.1 319.9 396.6 310.2 414 292.8L485.1 221.7C502.4 204.4 512.2 180.8 512.2 156.3C512.2 105.2 470.8 63.8 419.7 63.8L419.5 64ZM275.2 141.3C273.3 140.5 271.4 139.4 269.7 138.2C257.1 131.7 242.7 128 227.6 128C203.1 128 179.6 137.7 162.2 155.1L91.1 226.2C73.8 243.5 64 267.1 64 291.6C64 342.7 105.4 384.1 156.5 384.1C173 384.1 189.1 379.7 203.2 371.5C219 387.5 237.4 400.9 257.8 411C229.6 434.9 193.8 448.2 156.5 448.2C70.1 448.2 0 378.2 0 291.7C0 250.2 16.5 210.4 45.8 181.1L116.9 110C146.2 80.7 186 64.2 227.5 64.2C314.1 64.2 384 134.8 384 221.1C384 222.4 384 223.7 384 225C383.6 242.7 368.9 256.6 351.2 256.2C333.5 255.8 319.6 241.1 320 223.4C320 222.6 320 221.9 320 221.1C320 187.4 302 157.8 275.2 141.5V141.3Z"
+        />
+      </symbol>
+    </svg>
+  </body>
+</html>
