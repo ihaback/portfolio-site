@@ -166,7 +166,7 @@ ul {
   --site-header-logo-font-size: var(--fs-650);
   --site-header-icons-nav-spacing-left: 1.25rem;
   --site-header-icon-size: 1.5rem;
-  --site-header-mobile-border-color: var(--clr-primary-500);
+  --site-header-mobile-border-color: var(--clr-primary-400);
 
   --about-header-font-size: var(--fs-900);
   --about-intro-font-size: var(--fs-600);
