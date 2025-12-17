@@ -40,14 +40,15 @@
   --clr-neutral-700: hsl(0 0% 30%);
   --clr-neutral-800: hsl(0 0% 17.5%);
   --clr-neutral-900: hsl(0 0% 7.5%);
-  --clr-accent-100: hsl(217, 91%, 94%);
-  --clr-accent-200: hsl(217, 91%, 89%);
-  --clr-accent-300: hsl(217, 91%, 87%);
-  --clr-accent-400: hsl(217, 91%, 85%);
-  --clr-accent-500: hsl(217, 91%, 75%);
-  --clr-accent-600: hsl(217, 91%, 65%);
-  --clr-accent-700: hsl(217, 91%, 55%);
-  --clr-accent-800: hsl(217, 91%, 45%);
+  --clr-accent-100: hsl(24 75% 95%);
+  --clr-accent-200: hsl(24 75% 82.5%);
+  --clr-accent-300: hsl(24 75% 70%);
+  --clr-accent-400: hsl(24 75% 60%);
+  --clr-accent-500: hsl(24 75% 50%);
+  --clr-accent-600: hsl(24 75% 40%);
+  --clr-accent-700: hsl(24 75% 30%);
+  --clr-accent-800: hsl(24 75% 17.5%);
+  --clr-accent-900: hsl(24 75% 7.5%);
   --clr-primary-100: hsl(216 75% 95%);
   --clr-primary-200: hsl(216 75% 82.5%);
   --clr-primary-300: hsl(216 75% 70%);
@@ -127,11 +128,11 @@ ul {
   --body-background-color: var(--clr-primary-900);
 
   --header-font-family: var(--ff-serif);
-  --header-color: var(--clr-accent-500);
+  --header-color: var(--clr-accent-200);
   --header-line-height: 1.1;
   --header-font-weight: 700;
   --header-text-transform: uppercase;
-  --header-letter-spacing: 0.16em;
+  --header-letter-spacing: 0.15em;
 
   --container-max-width: 64rem;
   --container-min-margin-inline: 1rem;
@@ -181,7 +182,7 @@ ul {
   --button-border-radius: 0.5rem;
   --button-primary-background: var(--clr-primary-200);
   --button-primary-color: var(--clr-neutral-800);
-  --button-accent-background: var(--clr-accent-500);
+  --button-accent-background: var(--clr-accent-200);
   --button-accent-color: var(--clr-neutral-800);
   --button-background-hover: var(--clr-primary-700);
   --button-color-hover: var(--clr-neutral-100);
@@ -189,7 +190,7 @@ ul {
   --card-spacing: 0.5rem;
   --card-body-padding: 2rem;
   --card-background: var(--clr-primary-900);
-  --card-background-hover: var(--clr-primary-400);
+  --card-background-hover: var(--clr-primary-100);
   --card-font-family: var(--body-font-family);
   --card-color: var(--body-text-color);
   --card-color-hover: var(--clr-neutral-800);
@@ -254,7 +255,7 @@ ul {
   --form-input-border-default: 3px solid var(--form-field-color);
   --form-input-border-radius: 0.25rem;
 
-  --form-placeholder-color: var(--clr-primary-600);
+  --form-placeholder-color: var(--clr-primary-500);
   --form-placeholder-font-weight: 500;
   --form-placeholder-font-family: var(--body-font-family);
   --form-placeholder-font-size: var(--body-font-size);
