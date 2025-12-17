@@ -1,3 +1,5 @@
+@import "op.min.css";
+
 /* FONTS */
 @font-face {
   font-family: "Alegreya SC";
@@ -30,29 +32,47 @@
 
 /* ROOT */
 :root {
-  --clr-white: #fff;
-  --clr-neutral-100: hsl(215, 20%, 94%);
-  --clr-neutral-200: hsl(215, 14%, 89%);
-  --clr-neutral-300: hsl(215, 16%, 75%);
-  --clr-neutral-400: hsl(215, 20%, 65%);
-  --clr-neutral-700: hsl(215, 25%, 27%);
-  --clr-neutral-800: hsl(215, 28%, 17%);
-  --clr-accent-100: hsl(217, 91%, 94%);
-  --clr-accent-200: hsl(217, 91%, 89%);
-  --clr-accent-300: hsl(217, 91%, 87%);
-  --clr-accent-400: hsl(217, 91%, 85%);
-  --clr-accent-500: hsl(217, 91%, 75%);
-  --clr-accent-600: hsl(217, 91%, 65%);
-  --clr-accent-700: hsl(217, 91%, 55%);
-  --clr-accent-800: hsl(217, 91%, 45%);
-  --clr-primary-100: hsl(215, 20%, 94%);
-  --clr-primary-200: hsl(215, 14%, 89%);
-  --clr-primary-300: hsl(215, 14%, 86%);
-  --clr-primary-400: hsl(215, 15%, 82%);
-  --clr-primary-500: hsl(215, 16%, 75%);
-  --clr-primary-600: hsl(215, 20%, 65%);
-  --clr-primary-700: hsl(215, 25%, 27%);
-  --clr-primary-800: hsl(215, 28%, 17%);
+  --clr-neutral-000: var(--gray-0);
+  --clr-neutral-100: var(--gray-1);
+  --clr-neutral-200: var(--gray-2);
+  --clr-neutral-300: var(--gray-3);
+  --clr-neutral-400: var(--gray-4);
+  --clr-neutral-500: var(--gray-5);
+  --clr-neutral-600: var(--gray-6);
+  --clr-neutral-700: var(--gray-7);
+  --clr-neutral-800: var(--gray-8);
+  --clr-neutral-900: var(--gray-9);
+  --clr-neutral-1000: var(--gray-10);
+  --clr-neutral-1100: var(--gray-11);
+  --clr-neutral-1200: var(--gray-12);
+  --clr-neutral-700: var(--gray-5);
+  --clr-neutral-800: var(--gray-6);
+  --clr-accent-000: var(--red-0);
+  --clr-accent-100: var(--red-1);
+  --clr-accent-200: var(--red-2);
+  --clr-accent-300: var(--red-3);
+  --clr-accent-400: var(--red-4);
+  --clr-accent-500: var(--red-5);
+  --clr-accent-600: var(--red-6);
+  --clr-accent-700: var(--red-7);
+  --clr-accent-800: var(--red-8);
+  --clr-accent-900: var(--red-9);
+  --clr-accent-1000: var(--red-10);
+  --clr-accent-1100: var(--red-11);
+  --clr-accent-1200: var(--red-12);
+  --clr-primary-000: var(--blue-0);
+  --clr-primary-100: var(--blue-1);
+  --clr-primary-200: var(--blue-2);
+  --clr-primary-300: var(--blue-3);
+  --clr-primary-400: var(--blue-4);
+  --clr-primary-500: var(--blue-5);
+  --clr-primary-600: var(--blue-6);
+  --clr-primary-700: var(--blue-7);
+  --clr-primary-800: var(--blue-8);
+  --clr-primary-900: var(--blue-9);
+  --clr-primary-1000: var(--blue-10);
+  --clr-primary-1100: var(--blue-11);
+  --clr-primary-1200: var(--blue-12);
 
   --ff-sans: "Source Sans Pro", sans-serif;
   --ff-serif: "Alegreya SC", serif;
@@ -117,17 +137,17 @@ ul {
 :root {
   --body-font-family: var(--ff-sans);
   --body-font-size: var(--fs-400);
-  --body-line-height: 1.5;
+  --body-line-height: var(--font-lineheight-3);
 
-  --body-text-color: var(--clr-neutral-100);
-  --body-background-color: var(--clr-primary-800);
+  --body-text-color: var(--clr-neutral-400);
+  --body-background-color: var(--clr-primary-1200);
 
   --header-font-family: var(--ff-serif);
-  --header-color: var(--clr-accent-500);
-  --header-line-height: 1.1;
+  --header-color: var(--clr-accent-300);
+  --header-line-height: var(--font-lineheight-0);
   --header-font-weight: 700;
   --header-text-transform: uppercase;
-  --header-letter-spacing: 0.16em;
+  --header-letter-spacing: var(--font-letterspacing-4);
 
   --container-max-width: 64rem;
   --container-min-margin-inline: 1rem;
@@ -144,8 +164,8 @@ ul {
 
   --flex-group-gap: 1rem var(--grid-gap);
 
-  --site-header-background-color: var(--clr-primary-400);
-  --site-header-color: var(--clr-primary-700);
+  --site-header-background-color: var(--clr-primary-100);
+  --site-header-color: var(--clr-primary-900);
   --site-header-link-color-hover: var(--clr-primary-600);
   --site-header-padding: 1.625rem 0;
   --site-header-nav-items-block-gap: 1.25rem;
@@ -158,7 +178,7 @@ ul {
   --site-header-logo-font-size: var(--fs-650);
   --site-header-icons-nav-spacing-left: 1.25rem;
   --site-header-icon-size: 1.5rem;
-  --site-header-mobile-border-color: var(--clr-primary-500);
+  --site-header-mobile-border-color: var(--clr-primary-200);
 
   --about-header-font-size: var(--fs-900);
   --about-intro-font-size: var(--fs-600);
@@ -172,30 +192,31 @@ ul {
   --button-padding: 0.75em 2em;
   --button-border: 0;
   --button-border-radius: 0.5rem;
-  --button-primary-background: var(--clr-primary-200);
-  --button-primary-color: var(--clr-neutral-800);
-  --button-accent-background: var(--clr-accent-500);
-  --button-accent-color: var(--clr-neutral-800);
-  --button-background-hover: var(--clr-primary-700);
-  --button-color-hover: var(--clr-neutral-100);
+  --button-color: var(--clr-neutral-1000);
+  --button-primary-background: var(--clr-primary-100);
+  --button-primary-color: var(--button-color);
+  --button-accent-background: var(--clr-accent-300);
+  --button-accent-color: var(--button-color);
+  --button-background-hover: var(--clr-primary-900);
+  --button-color-hover: var(--clr-neutral-200);
 
   --card-spacing: 0.5rem;
   --card-body-padding: 2rem;
-  --card-background: var(--clr-primary-800);
-  --card-background-hover: var(--clr-primary-400);
+  --card-background: var(--clr-primary-1200);
+  --card-background-hover: var(--clr-primary-600);
   --card-font-family: var(--body-font-family);
   --card-color: var(--body-text-color);
-  --card-color-hover: var(--clr-neutral-800);
+  --card-color-hover: var(--clr-neutral-900);
   --card-line-height: 1.25;
   --card-box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.15);
   --card-border-radius: 0.5rem;
   --card-heading-gap: 0.875ch;
   --card-heading-font-family: var(--header-font-family);
-  --card-heading-color: var(--body-text-color);
-  --card-heading-color-hover: var(--card-color-hover);
+  --card-heading-color: var(--clr-neutral-000);
+  --card-heading-color-hover: var(--clr-neutral-1200);
   --card-heading-line-height: 1;
   --card-heading-text-transform: uppercase;
-  --card-heading-letter-spacing: 0.16em;
+  --card-heading-letter-spacing: var(--header-letter-spacing);
   --card-heading-font-weight: 700;
   --card-heading-font-size: var(--fs-600);
   --card-heading-icon-size: var(--fs-500);
@@ -208,7 +229,7 @@ ul {
   --technologies-grid-min-size: 8rem;
   --technologies-grid-gap: 6.5rem 4rem;
   --technologies-icon-size: 3.5rem;
-  --technologies-icon-color: var(--clr-white);
+  --technologies-icon-color: var(--clr-neutral-000);
 
   --testimonials-grid-gap: 3rem 0rem;
   --testimonial-desktop-padding: 0rem 4.5rem;
@@ -223,7 +244,7 @@ ul {
   --testimonial-name-line-height: 1;
   --testimonial-title-gap-top: 0.25rem;
   --testimonial-title-font-size: var(--fs-400);
-  --testimonial-title-color: var(--clr-neutral-300);
+  --testimonial-title-color: var(--clr-neutral-500);
   --testimonial-title-line-height: 1;
 
   --testimonial-quote-gap-top: 1rem;
@@ -241,27 +262,27 @@ ul {
   --form-input-font-size: var(--body-font-size);
   --form-input-font-weight: 500;
   --form-input-color: var(--body-text-color);
-  --form-input-background-color: var(--clr-primary-700);
+  --form-input-background-color: var(--clr-primary-1100);
   --form-input-padding: 1rem;
-  --form-input-border-default: 3px solid var(--clr-primary-700);
+  --form-input-border-default: 3px solid var(--clr-primary-1100);
   --form-input-border-radius: 0.25rem;
 
-  --form-placeholder-color: var(--clr-primary-600);
+  --form-placeholder-color: var(--clr-primary-900);
   --form-placeholder-font-weight: 500;
   --form-placeholder-font-family: var(--body-font-family);
   --form-placeholder-font-size: var(--body-font-size);
 
-  --site-footer-background-color: var(--clr-primary-400);
-  --site-footer-color: var(--clr-primary-600);
+  --site-footer-background-color: var(--clr-primary-100);
+  --site-footer-color: var(--clr-primary-900);
   --site-footer-icons-gap: 1.25rem;
   --site-footer-name-font-size: var(--fs-400);
-  --site-footer-name-color: var(--clr-primary-700);
+  --site-footer-name-color: var(--clr-primary-900);
   --site-footer-name-font-family: var(--ff-serif);
   --site-footer-name-font-weight: 700;
   --site-footer-name-letter-spacing: 0.16em;
   --site-footer-name-text-transform: uppercase;
-  --site-footer-link-color: var(--clr-primary-600);
-  --site-footer-link-hover-color: var(--clr-primary-700);
+  --site-footer-link-color: var(--clr-primary-900);
+  --site-footer-link-hover-color: var(--clr-primary-800);
   --site-footer-link-icon-size: 1.875rem;
 }
 
@@ -825,4 +846,20 @@ body {
 
 .bg-primary-800 {
   background-color: var(--clr-primary-800);
+}
+
+.bg-primary-900 {
+  background-color: var(--clr-primary-900);
+}
+
+.bg-primary-1000 {
+  background-color: var(--clr-primary-1000);
+}
+
+.bg-primary-1100 {
+  background-color: var(--clr-primary-1100);
+}
+
+.bg-primary-1200 {
+  background-color: var(--clr-primary-1200);
 }
