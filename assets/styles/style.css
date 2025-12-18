@@ -255,7 +255,7 @@ ul {
   --form-input-border-default: 3px solid var(--form-field-color);
   --form-input-border-radius: 0.25rem;
 
-  --form-placeholder-color: var(--clr-primary-500);
+  --form-placeholder-color: var(--clr-primary-600);
   --form-placeholder-font-weight: 500;
   --form-placeholder-font-family: var(--body-font-family);
   --form-placeholder-font-size: var(--body-font-size);
