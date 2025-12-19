@@ -214,8 +214,8 @@ ul {
   --portfolio-grid-gap: 1.5rem;
 
   --technologies-grid-min-size: 8rem;
-  --technologies-grid-gap: 6.5rem 4rem;
-  --technologies-icon-size: 3.5rem;
+  --technologies-grid-gap: 6.5rem 2rem;
+  --technologies-icon-size: 3.125rem;
   --technologies-icon-color: var(--clr-white);
 
   --testimonials-grid-gap: 3rem 0rem;
@@ -654,6 +654,12 @@ body {
   width: var(--technologies-icon-size);
   height: var(--technologies-icon-size);
   fill: var(--technologies-icon-color);
+}
+
+.technologies__link:hover .technologies__icon {
+  @media (width > 45em) {
+    fill: var(--clr-primary-300);
+  }
 }
 
 .testimonials {
