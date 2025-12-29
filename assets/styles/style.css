@@ -121,7 +121,7 @@ ul {
 /* GENERAL */
 :root {
   --body-font-family: var(--ff-sans);
-  --body-font-size: var(--fs-400);
+  --body-font-size: var(--fs-600);
   --body-line-height: 1.5;
 
   --body-text-color: var(--clr-neutral-200);
@@ -138,12 +138,11 @@ ul {
   --container-min-margin-inline: 1rem;
 
   --section-padding-block: clamp(5rem, 10vh, 6rem);
-  --section-header-content-margin-bottom: 3rem;
+  --section-header-content-margin-bottom: 3em;
   --section-header-content-paragraph-padding: 0 2rem;
   --section-header-font-size: var(--fs-800);
-  --section-header-content-paragraph-font-size: var(--fs-600);
 
-  --flow-spacer: 1rem;
+  --flow-spacer: 1em;
 
   --grid-gap: 1.5rem;
 
@@ -169,7 +168,6 @@ ul {
   --site-header-mobile-border-color: var(--clr-primary-400);
 
   --about-header-font-size: var(--fs-900);
-  --about-intro-font-size: var(--fs-600);
   --about-image-border-radius: 1rem;
   --about-image-box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.15);
 
@@ -192,6 +190,7 @@ ul {
   --card-background: var(--clr-primary-900);
   --card-background-hover: var(--clr-primary-100);
   --card-font-family: var(--body-font-family);
+  --card-font-size: var(--fs-400);
   --card-color: var(--body-text-color);
   --card-color-hover: var(--clr-neutral-800);
   --card-line-height: 1.25;
@@ -233,8 +232,8 @@ ul {
   --testimonial-title-font-size: var(--fs-400);
   --testimonial-title-color: var(--clr-neutral-300);
   --testimonial-title-line-height: 1;
-
   --testimonial-quote-gap-top: 1rem;
+  --testimonial-quote-font-size: var(--fs-400);
   --testimonial-quote-line-height: 1.6;
   --testimonial-quote-color: var(--body-text-color);
 
@@ -244,9 +243,9 @@ ul {
   --form-label-color: var(--body-text-color);
   --form-label-font-family: var(--body-font-family);
   --form-label-font-weight: 700;
-  --form-label-font-size: var(--body-font-size);
+  --form-label-font-size: var(--fs-400);
 
-  --form-input-font-size: var(--body-font-size);
+  --form-input-font-size: var(--fs-400);
   --form-input-font-weight: 500;
   --form-input-color: var(--body-text-color);
   --form-field-color: var(--clr-primary-800);
@@ -258,7 +257,7 @@ ul {
   --form-placeholder-color: var(--clr-primary-600);
   --form-placeholder-font-weight: 500;
   --form-placeholder-font-family: var(--body-font-family);
-  --form-placeholder-font-size: var(--body-font-size);
+  --form-placeholder-font-size: var(--fs-400);
 
   --site-footer-background-color: var(--navigation-background-color);
   --site-footer-color: var(--navigation-color);
@@ -579,7 +578,6 @@ body {
 }
 
 .section__header-content-paragraph {
-  font-size: var(--section-header-content-paragraph-font-size);
   padding: var(--section-header-content-paragraph-padding);
 }
 
@@ -597,6 +595,7 @@ body {
   padding: var(--card-body-padding);
   background-color: var(--card-background);
   font-family: var(--card-font-family);
+  font-size: var(--card-font-size);
   color: var(--card-color);
   line-height: var(--card-line-height);
   box-shadow: var(--card-box-shadow);
@@ -706,6 +705,7 @@ body {
   line-height: var(--testimonial-quote-line-height);
   color: var(--testimonial-quote-color);
   margin-top: var(--testimonial-quote-gap-top);
+  font-size: var(--testimonial-quote-font-size);
 }
 
 .contact {
