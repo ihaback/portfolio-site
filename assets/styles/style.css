@@ -121,7 +121,8 @@ ul {
 /* GENERAL */
 :root {
   --body-font-family: var(--ff-sans);
-  --body-font-size: var(--fs-600);
+  --body-font-size: var(--fs-400);
+  --body-font-size-large: var(--fs-600);
   --body-line-height: 1.5;
 
   --body-text-color: var(--clr-neutral-200);
@@ -190,7 +191,6 @@ ul {
   --card-background: var(--clr-primary-900);
   --card-background-hover: var(--clr-primary-100);
   --card-font-family: var(--body-font-family);
-  --card-font-size: var(--fs-400);
   --card-color: var(--body-text-color);
   --card-color-hover: var(--clr-neutral-800);
   --card-line-height: 1.25;
@@ -233,7 +233,6 @@ ul {
   --testimonial-title-color: var(--clr-neutral-300);
   --testimonial-title-line-height: 1;
   --testimonial-quote-gap-top: 1rem;
-  --testimonial-quote-font-size: var(--fs-400);
   --testimonial-quote-line-height: 1.6;
   --testimonial-quote-color: var(--body-text-color);
 
@@ -243,9 +242,9 @@ ul {
   --form-label-color: var(--body-text-color);
   --form-label-font-family: var(--body-font-family);
   --form-label-font-weight: 700;
-  --form-label-font-size: var(--fs-400);
+  --form-label-font-size: var(--body-font-size);
 
-  --form-input-font-size: var(--fs-400);
+  --form-input-font-size: var(--body-font-size);
   --form-input-font-weight: 500;
   --form-input-color: var(--body-text-color);
   --form-field-color: var(--clr-primary-800);
@@ -554,10 +553,6 @@ body {
   text-wrap: balance;
 }
 
-.about__intro {
-  font-size: var(--about-intro-font-size);
-}
-
 .about__image {
   border-radius: var(--about-image-border-radius);
   box-shadow: var(--about-image-box-shadow);
@@ -595,7 +590,6 @@ body {
   padding: var(--card-body-padding);
   background-color: var(--card-background);
   font-family: var(--card-font-family);
-  font-size: var(--card-font-size);
   color: var(--card-color);
   line-height: var(--card-line-height);
   box-shadow: var(--card-box-shadow);
@@ -705,7 +699,6 @@ body {
   line-height: var(--testimonial-quote-line-height);
   color: var(--testimonial-quote-color);
   margin-top: var(--testimonial-quote-gap-top);
-  font-size: var(--testimonial-quote-font-size);
 }
 
 .contact {
@@ -806,6 +799,10 @@ body {
 
 .text-center {
   text-align: center;
+}
+
+.font-size-large {
+  font-size: var(--body-font-size-large);
 }
 
 .visually-hidden {
