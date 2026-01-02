@@ -147,7 +147,7 @@ ul {
 
   --grid-gap: 1.5rem;
 
-  --flex-group-gap: 1rem var(--grid-gap);
+  --flex-group-gap: var(--grid-gap);
 
   --navigation-background-color: var(--clr-primary-200);
   --navigation-color: var(--clr-primary-700);
