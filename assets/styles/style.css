@@ -727,6 +727,8 @@ body {
   padding: var(--form-input-padding);
   border: var(--form-input-border-default);
   border-radius: var(--form-input-border-radius);
+  width: 100%;
+  max-width: 100%;
 }
 
 .contact__textarea {
