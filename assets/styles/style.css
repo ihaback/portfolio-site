@@ -663,6 +663,14 @@ body {
   --grid-gap: var(--testimonials-grid-gap);
 }
 
+.testimonial--centered {
+  @media (width > 45em) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: 50%;
+  }
+}
+
 .testimonial {
   display: grid;
   grid-template-rows: max-content auto auto 1fr;
